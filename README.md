@@ -3,7 +3,7 @@ android-flux-architecture
 
 A showcase of [Flux architecture](https://github.com/facebook/flux) patterns for Android apps.
 
-
+![Flux](arts/flux.jpg)
 
 There are 4 samples which have different implementation of Dispatcher and Store's Change Event.
 
