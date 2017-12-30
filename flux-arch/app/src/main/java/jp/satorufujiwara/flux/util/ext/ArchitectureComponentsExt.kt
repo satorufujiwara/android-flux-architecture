@@ -9,10 +9,8 @@ import android.arch.lifecycle.ViewModelProviders
 import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentActivity
 
-fun <T> LiveData<T>.observe(owner: LifecycleOwner, observer: (T?) -> Unit) = observe(owner, object : Observer<T> {
-  override fun onChanged(v: T?) {
-    observer.invoke(v)
-  }
+fun <T> LiveData<T>.observe(owner: LifecycleOwner, observer: (T?) -> Unit) = observe(owner, Observer<T> {
+  observer.invoke(it)
 })
 
 fun <X, Y> LiveData<X>.switchMap(func: (X) -> LiveData<Y>)
