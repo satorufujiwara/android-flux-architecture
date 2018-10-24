@@ -1,15 +1,19 @@
 package jp.satorufujiwara.flux.data.di
 
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
-import com.squareup.moshi.KotlinJsonAdapterFactory
 import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import jp.satorufujiwara.flux.data.api.GitHubService
+import okhttp3.CipherSuite
+import okhttp3.ConnectionSpec
 import okhttp3.OkHttpClient
+import okhttp3.TlsVersion
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
+import java.util.*
 import javax.inject.Singleton
 
 @Module
@@ -24,9 +28,9 @@ class DataModule {
   @Singleton
   @Provides
   fun providesOkHttp(): OkHttpClient = OkHttpClient.Builder()
-      .addInterceptor(HttpLoggingInterceptor()
-          .apply { level = HttpLoggingInterceptor.Level.BODY })
-      .build()
+          .addInterceptor(HttpLoggingInterceptor()
+                  .apply { level = HttpLoggingInterceptor.Level.BODY })
+          .build()
 
   @Singleton
   @Provides
