@@ -29,7 +29,7 @@ android {
 }
 
 ext.androidx_version = "1.0.0"
-ext.lifecycle_version="2.0.0-rc01"
+ext.lifecycle_version="2.0.0"
 ext.dagger_version = "2.16"
 ext.moshi_version = "1.7.0"
 ext.retrofit_version = "2.4.0"
@@ -41,7 +41,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     // androidx libs
-    implementation "androidx.appcompat:appcompat:$androidx_version"
+    implementation "androidx.appcompat:appcompat:1.0.2"
     implementation "com.google.android.material:material:$androidx_version"
     implementation "androidx.recyclerview:recyclerview:$androidx_version"
     implementation "androidx.cardview:cardview:$androidx_version"
@@ -78,6 +78,6 @@ dependencies {
     implementation "com.jakewharton.timber:timber:4.7.1"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0-alpha3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
     testImplementation 'junit:junit:4.12'
 }
