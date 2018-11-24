@@ -4,14 +4,14 @@ import android.annotation.SuppressLint
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.support.v4.app.DialogFragment
-import android.support.v7.app.AppCompatDialog
 import android.util.DisplayMetrics
 import android.view.Window
 import android.view.WindowManager
 import android.webkit.WebChromeClient
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatDialog
+import androidx.fragment.app.DialogFragment
 import jp.satorufujiwara.flux.di.Injectable
 import jp.satorufujiwara.flux.di.StoreProvider
 import jp.satorufujiwara.flux.util.ext.observe

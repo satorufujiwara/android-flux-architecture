@@ -1,6 +1,6 @@
 package jp.satorufujiwara.flux.ui.main
 
-import android.support.v4.app.FragmentActivity
+import androidx.fragment.app.FragmentActivity
 import io.reactivex.rxkotlin.subscribeBy
 import io.reactivex.schedulers.Schedulers
 import jp.satorufujiwara.flux.data.repository.GitHubRepository

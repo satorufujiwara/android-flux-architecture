@@ -5,9 +5,10 @@
     <data>
         <variable name="repo" type="jp.satorufujiwara.flux.data.entity.Repo"/>
     </data>
-    <android.support.v7.widget.CardView android:layout_width="match_parent"
-                                        android:layout_height="48dp"
-                                        app:cardUseCompatPadding="true">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:cardUseCompatPadding="true">
         <TextView
                 android:text="@{repo.name}"
                 android:layout_width="match_parent"
@@ -20,5 +21,5 @@
                 tools:text="repository name"
         />
 
-    </android.support.v7.widget.CardView>
+    </androidx.cardview.widget.CardView>
 </layout>

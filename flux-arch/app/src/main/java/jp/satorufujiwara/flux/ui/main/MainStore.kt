@@ -1,6 +1,6 @@
 package jp.satorufujiwara.flux.ui.main
 
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import io.reactivex.android.schedulers.AndroidSchedulers
 import jp.satorufujiwara.flux.data.entity.Repo
 import jp.satorufujiwara.flux.flux.Store
